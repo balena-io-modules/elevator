@@ -1,0 +1,42 @@
+{
+  "name": "elevator",
+  "version": "1.0.0",
+  "description": "Windows UAC elevation that just works",
+  "main": "lib/elevator.js",
+  "homepage": "https://github.com/resin-io/elevator",
+  "os": [
+    "win32"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/resin-io/elevator.git"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "prepublish": "gulp test",
+    "readme": "jsdoc2md --template doc/README.hbs lib/elevator.js > README.md"
+  },
+  "keywords": [
+    "windows",
+    "win32",
+    "uac",
+    "elevate",
+    "elevator"
+  ],
+  "author": "Juan Cruz Viotti <juan@resin.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-mocha": "^2.1.3",
+    "jsdoc-to-markdown": "^1.1.1",
+    "jshint-stylish": "^2.0.1",
+    "mochainon": "^1.0.0"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
