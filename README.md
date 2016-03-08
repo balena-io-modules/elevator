@@ -2,7 +2,7 @@ elevator
 ========
 
 [![npm version](https://badge.fury.io/js/elevator.svg)](http://badge.fury.io/js/elevator)
-[![dependencies](https://david-dm.org/resin-io/elevator.png)](https://david-dm.org/resin-io/elevator.png)
+[![dependencies](https://david-dm.org/resin-io-modules/elevator.png)](https://david-dm.org/resin-io-modules/elevator.png)
 [![Build status](https://ci.appveyor.com/api/projects/status/ysweh6h4ed4ak114/branch/master?svg=true)](https://ci.appveyor.com/project/resin-io/elevator/branch/master)
 
 Join our online chat at [![Gitter chat](https://badges.gitter.im/resin-io/chat.png)](https://gitter.im/resin-io/chat)
@@ -92,7 +92,7 @@ elevator.executeSync([ 'cmd.exe' ], {
 Support
 -------
 
-If you're having any problem, please [raise an issue](https://github.com/resin-io/elevator/issues/new) on GitHub and the Resin.io team will be happy to help.
+If you're having any problem, please [raise an issue](https://github.com/resin-io-modules/elevator/issues/new) on GitHub and the Resin.io team will be happy to help.
 
 Tests
 -----
@@ -106,8 +106,8 @@ $ gulp test
 Contribute
 ----------
 
-- Issue Tracker: [github.com/resin-io/elevator/issues](https://github.com/resin-io/elevator/issues)
-- Source Code: [github.com/resin-io/elevator](https://github.com/resin-io/elevator)
+- Issue Tracker: [github.com/resin-io-modules/elevator/issues](https://github.com/resin-io-modules/elevator/issues)
+- Source Code: [github.com/resin-io-modules/elevator](https://github.com/resin-io-modules/elevator)
 
 Before submitting a PR, please make sure that you include tests, and that [jshint](http://jshint.com) runs without any warning:
 

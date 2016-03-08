@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Windows UAC elevation that just works",
   "main": "lib/elevator.js",
-  "homepage": "https://github.com/resin-io/elevator",
+  "homepage": "https://github.com/resin-io-modules/elevator",
   "os": [
     "win32"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/resin-io/elevator.git"
+    "url": "git://github.com/resin-io-modules/elevator.git"
   },
   "directories": {
     "test": "tests"
