@@ -239,6 +239,44 @@ describe('Command', function() {
 
     });
 
+    describe('given terminating = true and hidden = true', function() {
+
+      it('should return the correct command', function() {
+        var result = command.build([ 'foo' ], {
+          terminating: true,
+          hidden: true
+        });
+
+        m.chai.expect(result).to.deep.equal([ '-c', '-h', 'foo' ]);
+      });
+
+    });
+
+    describe('given persistent = true and hidden = true', function() {
+
+      it('should return the correct command', function() {
+        var result = command.build([ 'foo' ], {
+          persistent: true,
+          hidden: true
+        });
+
+        m.chai.expect(result).to.deep.equal([ '-k', '-h', 'foo' ]);
+      });
+
+    });
+
+    describe('given only hidden = true', function() {
+
+      it('should throw an error', function() {
+        m.chai.expect(function() {
+          command.build([ 'foo' ], {
+            hidden: true
+          });
+        }).to.throw('hidden requires the terminating or persistent option');
+      });
+
+    });
+
     describe('given waitForTermination = true', function() {
 
       it('should return the correct command', function() {

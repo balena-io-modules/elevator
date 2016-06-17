@@ -49,6 +49,7 @@ Documentation
 | [options.persistent] | <code>Boolean</code> |  | Launches a persistent command processor; equivalent to "cmd /k command". |
 | [options.doNotPushdCurrentDirectory] | <code>Boolean</code> |  | When using -c or -k, do not pushd the current directory before execution. |
 | [options.unicode] | <code>Boolean</code> |  | When using -c or -k, use Unicode; equivalent to "cmd /u". |
+| [options.hidden] | <code>Boolean</code> |  | When using -c or -k, start "cmd" in hidden mode. |
 | [options.waitForTermination] | <code>Boolean</code> |  | Waits for termination; equivalent to "start /wait command". |
 | callback | <code>function</code> |  | callback (error, stdout, stderr) |
 
@@ -81,6 +82,7 @@ elevator.execute([ 'cmd.exe' ], {
 | [options.persistent] | <code>Boolean</code> |  | Launches a persistent command processor; equivalent to "cmd /k command". |
 | [options.doNotPushdCurrentDirectory] | <code>Boolean</code> |  | When using -c or -k, do not pushd the current directory before execution. |
 | [options.unicode] | <code>Boolean</code> |  | When using -c or -k, use Unicode; equivalent to "cmd /u". |
+| [options.hidden] | <code>Boolean</code> |  | When using -c or -k, start "cmd" in hidden mode. |
 | [options.waitForTermination] | <code>Boolean</code> |  | Waits for termination; equivalent to "start /wait command". |
 
 **Example**  
