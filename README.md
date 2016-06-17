@@ -36,6 +36,7 @@ Documentation
     * [.executeSync(command, [options])](#module_elevator.executeSync) ⇒ <code>String</code>
 
 <a name="module_elevator.execute"></a>
+
 ### elevator.execute(command, [options], callback)
 **Kind**: static method of <code>[elevator](#module_elevator)</code>  
 **Summary**: Execute a command with UAC elevation  
@@ -47,7 +48,7 @@ Documentation
 | [options] | <code>Object</code> | <code>{}</code> | options |
 | [options.terminating] | <code>Boolean</code> |  | Launches a terminating command processor; equivalent to "cmd /c command". |
 | [options.persistent] | <code>Boolean</code> |  | Launches a persistent command processor; equivalent to "cmd /k command". |
-| [options.pushdCurrentDirectory] | <code>Boolean</code> |  | When using -c or -k, do not pushd the current directory before execution. |
+| [options.doNotPushdCurrentDirectory] | <code>Boolean</code> |  | When using -c or -k, do not pushd the current directory before execution. |
 | [options.unicode] | <code>Boolean</code> |  | When using -c or -k, use Unicode; equivalent to "cmd /u". |
 | [options.waitForTermination] | <code>Boolean</code> |  | Waits for termination; equivalent to "start /wait command". |
 | callback | <code>function</code> |  | callback (error, stdout, stderr) |
@@ -66,6 +67,7 @@ elevator.execute([ 'cmd.exe' ], {
 });
 ```
 <a name="module_elevator.executeSync"></a>
+
 ### elevator.executeSync(command, [options]) ⇒ <code>String</code>
 **Kind**: static method of <code>[elevator](#module_elevator)</code>  
 **Summary**: Execute a command with UAC elevation (Sync)  
@@ -78,7 +80,7 @@ elevator.execute([ 'cmd.exe' ], {
 | [options] | <code>Object</code> | <code>{}</code> | options |
 | [options.terminating] | <code>Boolean</code> |  | Launches a terminating command processor; equivalent to "cmd /c command". |
 | [options.persistent] | <code>Boolean</code> |  | Launches a persistent command processor; equivalent to "cmd /k command". |
-| [options.pushdCurrentDirectory] | <code>Boolean</code> |  | When using -c or -k, do not pushd the current directory before execution. |
+| [options.doNotPushdCurrentDirectory] | <code>Boolean</code> |  | When using -c or -k, do not pushd the current directory before execution. |
 | [options.unicode] | <code>Boolean</code> |  | When using -c or -k, use Unicode; equivalent to "cmd /u". |
 | [options.waitForTermination] | <code>Boolean</code> |  | Waits for termination; equivalent to "start /wait command". |
 
