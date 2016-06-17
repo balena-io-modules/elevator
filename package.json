@@ -1,6 +1,6 @@
 {
   "name": "elevator",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Windows UAC elevation that just works",
   "main": "lib/elevator.js",
   "homepage": "https://github.com/resin-io-modules/elevator",
