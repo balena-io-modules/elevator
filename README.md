@@ -37,6 +37,9 @@ Documentation
 <a name="module_elevator.execute"></a>
 
 ### elevator.execute(command, [options], callback)
+This function will yield an `Error` containing a code that equals
+`ELEVATE_CANCELLED` if the elevation was cancelled by the user.
+
 **Kind**: static method of <code>[elevator](#module_elevator)</code>  
 **Summary**: Execute a command with UAC elevation  
 **Access:** public  
@@ -69,6 +72,9 @@ elevator.execute([ 'cmd.exe' ], {
 <a name="module_elevator.executeSync"></a>
 
 ### elevator.executeSync(command, [options]) ⇒ <code>String</code>
+This function will throw an `Error` containing a code that equals
+`ELEVATE_CANCELLED` if the elevation was cancelled by the user.
+
 **Kind**: static method of <code>[elevator](#module_elevator)</code>  
 **Summary**: Execute a command with UAC elevation (Sync)  
 **Returns**: <code>String</code> - stdout buffer  
