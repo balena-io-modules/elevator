@@ -1,13 +1,12 @@
 elevator
 ========
 
+> Windows UAC elevation that just works.
+
 [![npm version](https://badge.fury.io/js/elevator.svg)](http://badge.fury.io/js/elevator)
-[![dependencies](https://david-dm.org/resin-io-modules/elevator.png)](https://david-dm.org/resin-io-modules/elevator.png)
+[![dependencies](https://david-dm.org/resin-io-modules/elevator.svg)](https://david-dm.org/resin-io-modules/elevator.svg)
 [![Build status](https://ci.appveyor.com/api/projects/status/ysweh6h4ed4ak114/branch/master?svg=true)](https://ci.appveyor.com/project/resin-io/elevator/branch/master)
-
-Join our online chat at [![Gitter chat](https://badges.gitter.im/resin-io/chat.png)](https://gitter.im/resin-io/chat)
-
-Windows UAC elevation that just works.
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/resin-io/chat)
 
 Description
 -----------
@@ -36,6 +35,7 @@ Documentation
     * [.executeSync(command, [options])](#module_elevator.executeSync) ⇒ <code>String</code>
 
 <a name="module_elevator.execute"></a>
+
 ### elevator.execute(command, [options], callback)
 **Kind**: static method of <code>[elevator](#module_elevator)</code>  
 **Summary**: Execute a command with UAC elevation  
@@ -66,6 +66,7 @@ elevator.execute([ 'cmd.exe' ], {
 });
 ```
 <a name="module_elevator.executeSync"></a>
+
 ### elevator.executeSync(command, [options]) ⇒ <code>String</code>
 **Kind**: static method of <code>[elevator](#module_elevator)</code>  
 **Summary**: Execute a command with UAC elevation (Sync)  
