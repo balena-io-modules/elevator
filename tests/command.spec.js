@@ -163,12 +163,12 @@ describe('Command', function() {
 
     });
 
-    describe('given terminating = true and pushdCurrentDirectory = true', function() {
+    describe('given terminating = true and doNotPushdCurrentDirectory = true', function() {
 
       it('should return the correct command', function() {
         var result = command.build([ 'foo' ], {
           terminating: true,
-          pushdCurrentDirectory: true
+          doNotPushdCurrentDirectory: true
         });
 
         m.chai.expect(result).to.deep.equal([ '-c', '-n', 'foo' ]);
@@ -176,12 +176,12 @@ describe('Command', function() {
 
     });
 
-    describe('given persistent = true and pushdCurrentDirectory = true', function() {
+    describe('given persistent = true and doNotPushdCurrentDirectory = true', function() {
 
       it('should return the correct command', function() {
         var result = command.build([ 'foo' ], {
           persistent: true,
-          pushdCurrentDirectory: true
+          doNotPushdCurrentDirectory: true
         });
 
         m.chai.expect(result).to.deep.equal([ '-k', '-n', 'foo' ]);
@@ -189,14 +189,14 @@ describe('Command', function() {
 
     });
 
-    describe('given only pushdCurrentDirectory = true', function() {
+    describe('given only doNotPushdCurrentDirectory = true', function() {
 
       it('should throw an error', function() {
         m.chai.expect(function() {
           command.build([ 'foo' ], {
-            pushdCurrentDirectory: true
+            doNotPushdCurrentDirectory: true
           });
-        }).to.throw('pushdCurrentDirectory requires the terminating or persistent option');
+        }).to.throw('doNotPushdCurrentDirectory requires the terminating or persistent option');
       });
 
     });
