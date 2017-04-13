@@ -35,5 +35,8 @@
     "jsdoc-to-markdown": "^1.1.1",
     "jshint-stylish": "^2.0.1",
     "mochainon": "^1.0.0"
+  },
+  "dependencies": {
+    "debug": "^2.6.3"
   }
 }
