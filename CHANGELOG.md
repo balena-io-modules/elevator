@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v2.2.3] - 2017-04-20
+
+### Changed
+
+- Fix logical error when yielding back a cancellation error.
+
 ## [v2.2.2] - 2017-04-14
 
 ### Changed
@@ -38,6 +44,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Remove `pushdCurrentDirectory` option.
 
+[v2.2.3]: https://github.com/resin-io-modules/elevator/compare/v2.2.2...v2.2.3
 [v2.2.2]: https://github.com/resin-io-modules/elevator/compare/v2.2.1...v2.2.2
 [v2.2.1]: https://github.com/resin-io-modules/elevator/compare/v2.2.0...v2.2.1
 [v2.2.0]: https://github.com/resin-io-modules/elevator/compare/v2.1.0...v2.2.0
